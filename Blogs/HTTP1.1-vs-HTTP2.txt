@@ -1,0 +1,31 @@
+Write a blog on Difference between HTTP1.1 vs HTTP2
+
+HTTP (Hyper Text Transfer Protocol) 
+- It is one of the Internet Protocol.
+- Communications between client computers (client side server) and web servers is done by sending HTTP Requests and receiving HTTP Responses
+- HTTP has four version :-
+          * HTTP 0.9
+          * HTTP 1.0
+          * HTTP 1.1 
+          * HTTP 2.0
+          * HTTP 3.0
+- every versions consistently added up with updates.
+
+Diffrence B/W HTTP 1.0 vs 2.00
+
+- In HTTP 1.0 when the client side servers requests contents (HTML,CSS,JS file) from web servers initially it was slow as 1 TCP(Transmisssion Control Protocol) 
+connection was provided, and so the content will reaches the client side servers as one by one. first the HTML file request will be done,
+and continued by other requests are done, and so now HTTP 1.0 has provided with 6 TCP connections itself, and so response from web servers to client side server
+was enomorous. vs HTTP 2.0 they do convert the requests into streams and store them in TCP packets, and they were connection oriented and so the response were 
+much more quicker that previous version of HTTP 1.0.
+
+- HTTP 1.0 changes the TCP connections when multiple requests are done, and while HTTP 2.0 allows using same TCP connections for multiple requests.
+
+- HTTP 1.0 when we make an request from client side server it reflects the data what we requested for from web side servers, in HTTP2.0 Instead of waiting for the client 
+to request for assets like JS and CSS, the server can push the resources it believes would be required by the client and Avoids the round trip.  
+
+- HTTP 1.1 is a sequential protocol. So, we can send a single request at a time. HTTP 2.0, in turn, allows to send requests and receive responses asynchronously. In this 
+way, we can do multiple requests at the same time using a single connection.
+
+-  to avoid a server receiving lots of requests, HTTP 2.0 introduced a server push functionality. With that, the server tries to predict the resources that will be
+ requested soon.So, the server pro-actively pushes these resources to the client cache.
