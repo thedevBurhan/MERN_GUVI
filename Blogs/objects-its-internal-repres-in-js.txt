@@ -1,0 +1,34 @@
+Write a blog about objects and its internal representation in Javascript
+
+- Javascript main design is to store all the objects in an key value pair, in-order for easy accessibility.
+- Javascript intrerprets to object been created  and console or get the specific value requested from specific key from an objects.
+- Javascript is an dynamic language.
+- Javascript object concepts do vary when compared to diffrent programming languages like java. JS object do describes them in key:value
+  pair,however we can change the values assigned for the keys. 
+-objects can store multiple value in an single container in form of Key value pairs. objects are much more helpful in-oder to store
+  the datas. 
+- objects values can be stored in array, and array value can be stored in objects.
+ 
+
+Example for primitive data types: 
+
+var carName = "maruthi";
+var carCostInLakhs =2; 
+
+so in oder to know the complete function about the care, I need to call all the variable decalred, however in objects
+
+var car1={
+carName:"maruthi";
+carCostInLakhs:2;
+}
+
+so by using object, I can store all the functions of an particular object in same container. and however these value can be reassigned as when there is an 
+update in price of the car.
+
+Example for changing the value in object:
+var car1={
+carName:"maruthi";
+carCostInLakhs:2;
+}
+car1.carCostInLakhs=3;
+console.log(car1.carCostInLakhs); Now the carCostInLakhs is 3.
