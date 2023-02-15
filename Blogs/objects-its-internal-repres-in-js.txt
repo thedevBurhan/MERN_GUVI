@@ -15,7 +15,7 @@ Example for primitive data types:
 var carName = "maruthi";
 var carCostInLakhs =2; 
 
-so in oder to know the complete function about the care, I need to call all the variable decalred, however in objects
+so in oder to know the complete function about the car, I need to call all the variable decalred, however in objects
 
 var car1={
 carName:"maruthi";
