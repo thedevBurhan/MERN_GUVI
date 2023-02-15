@@ -8,6 +8,6 @@ Window Object:
 the contents of the webpage.Whenever a window appears on the screen to display the contents of the document object, 
 the window object is created. 
 
-document object is a property of the window object.
+Document object is a property of the window object.
 The document object represents the HTML document, CSS dcoument, and Link tags which are linked to HTML and JS document loaded in
 that window.
