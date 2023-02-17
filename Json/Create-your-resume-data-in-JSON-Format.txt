@@ -1,0 +1,16 @@
+      
+2. Create Your Own resume data in JSON Format 
+
+      var resume = {
+            'name':'Mohammed Burhan S',
+            'qualifications':'B.E Mechanical enginneering',
+            'mail': 'smdburhan@gmail.com',
+            'address': '16/6 ,Killer gooddown, Chennai',
+            'mobile': '9876543210',
+            '10th': 'Velakanni matric higher sec school',
+            'percentageAt10th': '89%',
+            '12th': 'Velakanni matric higher sec school',
+            'percentageAt12th' : '82%',
+            'college' : 'S.A Enginering College',
+            'percentageAtCollege': '79%',
+};
