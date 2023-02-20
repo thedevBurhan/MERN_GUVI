@@ -27,3 +27,41 @@ request.onload=function() {
 
 //inside the function:we are converting the data from the server to the client
 //which is in string to object
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+// functions
+
+function foo(n,m){
+    
+         if(m==undefined){
+           return n[0];
+         }
+          else if(m<0){
+           return [];
+         }
+         else {
+           return n.slice(0,m);
+         }
+  }
+//   console.log(foo([7, 9, 0, -2]));
+//   console.log(foo([0,6,4,5]));
+//   console.log(foo([1,2,3,4],-3));
+//   console.log(foo([1,2,3,4],3));
+//   console.log(foo([1,2,3,4],5));
+// ----------------------------------------------------------------------------------------------------------------------------------------
+  function last(n,m){
+ 
+    if(m==undefined){
+      return n[n.length-1] ;
+    }
+     else{
+      return n.slice(-m);
+    }
+    
+
+}
+// console.log(last([7, 9, 0, -2]));  -2       
+// console.log(last([7, 9, 0, -2],3));  [9,0,-2]  
+// console.log(last([7, 9, 0, -2],6));  [7,9,0,-2]
