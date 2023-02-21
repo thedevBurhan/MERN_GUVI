@@ -1,3 +1,18 @@
+//To Find Prime Number
+var n=10;
+for(var a=2;a<=n;a++){
+      var count=0;
+      for(var i=1;i<=a;i++){
+          if(a%i===0){
+              count++;
+          }
+      }
+      if(count==2){
+          //console.log(a);
+      }
+  }
+
+  //----------------------------------------------------------------------------------------------------------------------------------
 //XML-HTTP REQUEST: it is used to interact with the server via API
 //Why:to get data from the server via API
 //HOW
@@ -21,7 +36,7 @@ request.onload=function() {
     var results=JSON.parse(request.response);
     //console.log(results);
     for(var i=0; i <results.length; i++){
-    console.log(results[i].name,results[i].capital,results[i].flag);
+   // console.log(results[i].name,results[i].capital,results[i].flag);
     }
 }
 
@@ -135,3 +150,64 @@ function remove (a,b){
   return box;
 }
 // console.log(remove([2, 5, 9, 6], 5));
+
+// -----------------------------------------------------------------------------------------------------------------------------------
+
+// 1.Write a JavaScript program to find the most frequent item of an array.
+// Sample array: 
+// var arr1=[3, 'q', 'q', 'q', 2, 3, 'q', 3, 'q', 2, 4, 9, 3];
+// Sample Output: q ( 5 times )
+
+var arr1=[3, 'q', 'q', 'q', 2, 3, 'q', 3, 'q', 2, 4, 9, 3];
+var mo=1;
+var count=0;
+var ele;
+for(var i=0;i<arr1.length;i++){
+    for(var j=i;j<arr1.length;j++){
+        if(arr1[i]==arr1[j]){
+            count++;
+        }
+        if(count>mo){
+            mo=count;
+            ele=arr1[i];
+        }
+    }
+    count=0;
+
+}
+// console.log(ele+" Occureded"+mo+" times");
+
+// -----------------------------------------------------------------------------------------------------------------------------------
+
+// 2. write a  anonymous function which gives the unique number in the array
+// Input:var arr=[1,1,2,3,4,5,6,7,4,3,2,5,6];
+// Ouput:7
+var num=[1,1,2,3,4,5,6,7,4,3,2,5,6];
+var temp=num[0];
+for (var i=1;i<num.length;i++){
+  temp=temp^num[i];
+}
+// console.log(temp);
+
+var arr=[1,1,2,3,4,5,6,7,4,3,2,5,6];
+var arr1=arr.sort();
+var mo=1;
+var count=0;
+var ele;
+for(var i=0;i<arr1.length;i++){
+    for(var j=i;j<arr1.length;j++){
+        if(arr1[i]==arr1[j]){
+            count++;
+        }
+        if(count==1){
+          
+            ele=arr1[i];
+        }
+    }
+    count=0;
+
+}
+// console.log(ele);
+
+var arr=[1,1,2,3,4,5,6,7,4,3,2,5,6];
+ console.log( new Set(arr));// to remove duplication
