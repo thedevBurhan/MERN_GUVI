@@ -7,6 +7,98 @@
     <title>Remove duplicates from an array</title>
 </head>
 <body>
-    
+    <script>
+        //By Functions:-
+        
+            function removeDuplicatesFromAnArray (arr){
+                var res;
+                var result=[]
+                for(var i=0;i<arr.length;i++){
+                    if(arr[i] !==res){
+                        res=arr[i];
+                        result.push(res);
+                    }
+                    
+                }
+                return result;
+            }
+            var numbers=[1,1,2,2,2,3,3,3,4,4,4,5,5,5,5,5,6,6];
+
+            //this method is can be used only if the duplicates are continues.
+        
+            console.log(removeDuplicatesFromAnArray(numbers));
+        
+            //output:[1,2,3,4,5,6]
+            
+        //------------------------------------------------------------------------------------------------------------------------------------
+        //By Arrow Functions:-
+        
+        var endresult=(arr)=>{
+            var res;
+                var result=[]
+                for(var i=0;i<arr.length;i++){
+                    if(arr[i] !==res){
+                        res=arr[i];
+                        result.push(res);
+                    }
+                    
+                }
+                return result;
+            }
+            var numbers=[1,1,2,2,2,3,3,3,4,4,4,5,5,5,5,5,6,6];
+
+            //this method is can be used only if the duplicates are continues.
+        
+            console.log(endresult(numbers));
+        
+             //output:[1,2,3,4,5,6]
+        
+        //--------------------------------------------------------------------------------------------------------------------------------------
+        
+        //By Anonymous Functions :-
+        
+        var endresult=function(arr){
+            var res;
+                var result=[]
+                for(var i=0;i<arr.length;i++){
+                    if(arr[i] !==res){
+                        res=arr[i];
+                        result.push(res);
+                    }
+                    
+                }
+                return result;
+            }
+            var numbers=[1,1,2,2,2,3,3,3,4,4,4,5,5,5,5,5,6,6];
+
+            //this method is can be used only if the duplicates are continues.
+        
+            console.log(endresult(numbers));
+        
+           //output:[1,2,3,4,5,6]
+        
+        //--------------------------------------------------------------------------------------------------------------------------------------
+        
+        //IIFE - Immediately Invoked Function Expression
+        
+        (function  (){
+            var numbers=[1,1,2,2,2,3,3,3,4,4,4,5,5,5,5,5,6,6];
+            var res;
+                var result=[]
+                for(var i=0;i<numbers.length;i++){
+                    if(numbers[i] !==res){
+                        res=numbers[i];
+                        result.push(res);
+                    }
+            }
+            console.log (result);
+        })    
+        ();
+             //this method is can be used only if the duplicates are continues.
+
+             //output:[1,2,3,4,5,6]
+        //--------------------------------------------------------------------------------------------------------------------------------------
+        
+            </script> 
 </body>
 </html>
