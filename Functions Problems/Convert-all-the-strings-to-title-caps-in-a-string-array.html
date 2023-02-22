@@ -7,6 +7,76 @@
     <title>Convert all the strings to title caps in a string array</title>
 </head>
 <body>
-    
+    <script>
+        //By Functions:-
+        
+            function convertAllTheStringsToTitleCapsInStringArray (caps){
+                for(var i=0;i<caps.length;i++){
+                    console.log(caps[i].charAt(0).toUpperCase() + caps[i].substring(1));            
+                }
+                return;
+            }
+            var convertStr=["html","css","javascript"];
+        
+            convertAllTheStringsToTitleCapsInStringArray(convertStr);
+        
+            //output:Html
+                //  Css
+                //  Javascript
+            
+        //------------------------------------------------------------------------------------------------------------------------------------
+        //By Arrow Functions:-
+        
+        var endresult=(caps)=>{
+            for(var i=0;i<caps.length;i++){
+                    console.log(caps[i].charAt(0).toUpperCase() + caps[i].substring(1));            
+                }
+                return ;
+            }
+            var convertStr=["html","css","javascript"];
+        
+            endresult(convertStr);
+        
+             //output:Html
+                //  Css
+                //  Javascript
+        
+        //--------------------------------------------------------------------------------------------------------------------------------------
+        
+        //By Anonymous Functions :-
+        
+        var endresult=function(caps){
+            for(var i=0;i<caps.length;i++){
+                    console.log(caps[i].charAt(0).toUpperCase() + caps[i].substring(1));            
+                }
+                return ;
+            }
+            var convertStr=["html","css","javascript"];
+
+            endresult(convertStr);
+
+        //output:Html
+                //  Css
+                //  Javascript
+        
+        //--------------------------------------------------------------------------------------------------------------------------------------
+        
+        //IIFE - Immediately Invoked Function Expression
+        
+        (function  (){
+           var convertStr=["html","css","javascript"];
+           for(var i=0;i<convertStr.length;i++){
+                    console.log(convertStr[i].charAt(0).toUpperCase() + convertStr[i].substring(1));            
+                }
+                return ;
+        })    
+        ();
+            
+           //output:Html
+                //  Css
+                //  Javascript
+        //--------------------------------------------------------------------------------------------------------------------------------------
+        
+            </script> 
 </body>
 </html>
