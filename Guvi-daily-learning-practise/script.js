@@ -250,3 +250,22 @@ function sumOfAllNumbersInAnArrays (...arr){
 }
 
 //console.log(sumOfAllNumbersInAnArrays(25,36,4,8));
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+
+// Return median of two sorted arrays of the same size.
+
+function returnMedianOfTwoSortedArraysOfTheSameSize(value1, value2) {
+  var res =value1.concat(value2);
+  res.sort((a,b)=>a-b);
+  var result=res.length/2
+  if(res.length%2 ==0){
+      return (res[result]);
+  }
+  
+}
+var arr1 = [1, 2, 3, 4, 5];
+var arr2 = [6,7,8,10,9];
+console.log(returnMedianOfTwoSortedArraysOfTheSameSize(arr1, arr2));
+
+// ------------------------------------------------------------------------------------------------------------------------------------
