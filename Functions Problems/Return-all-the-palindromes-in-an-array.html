@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Return all the palindromes in an array</title>
 </head>
+
 <body>
-    
+    <script>
+        //By Functions:-
+
+        function ReturnAllThePalindromesInAnArray(findpalin) {
+            var result = [];
+            var res;
+            for (var i = 0; i < findpalin.length; i++) {
+                res = findpalin[i].split("").reverse().join("");
+                if (res === findpalin[i]) {
+                    result.push(res);
+                }
+            }
+            return result;
+        }
+        var palindromes = ["CAT", "TAT","WOW", "MOM","TIN", "TINIT"];
+
+        console.log(ReturnAllThePalindromesInAnArray(palindromes));
+
+        //output:["TAT", "WOW", "MOM", "TINIT"]
+
+        //------------------------------------------------------------------------------------------------------------------------------------
+        
+        //By Arrow Functions:-
+
+        var result = (findpalin) => {
+            var result = [];
+            var res;
+            for (var i = 0; i < findpalin.length; i++) {
+                res = findpalin[i].split("").reverse().join("");
+                if (res === findpalin[i]) {
+                    result.push(res);
+                }
+            }
+            return result;
+        }
+        var palindromes = ["CAT", "TAT","WOW", "MOM","TIN", "TINIT"];
+
+        console.log(ReturnAllThePalindromesInAnArray(palindromes));
+
+        //output:["TAT", "WOW", "MOM", "TINIT"]
+
+        //--------------------------------------------------------------------------------------------------------------------------------------
+
+        //By Anonymous Functions :-
+
+        var result = function (palindromes) {
+            var result = [];
+            var res;
+            for (var i = 0; i < findpalin.length; i++) {
+                res = findpalin[i].split("").reverse().join("");
+                if (res === findpalin[i]) {
+                    result.push(res);
+                }
+            }
+            return result;
+        }
+        var palindromes = ["CAT", "TAT","WOW", "MOM","TIN", "TINIT"];
+
+        console.log(ReturnAllThePalindromesInAnArray(palindromes));
+
+        //output:["TAT", "WOW", "MOM", "TINIT"]
+
+        //--------------------------------------------------------------------------------------------------------------------------------------
+
+        //IIFE - Immediately Invoked Function Expression
+
+        (function () {
+           var palindromes = ["CAT", "TAT","WOW", "MOM","TIN", "TINIT"];
+            var result = [];
+            var res;
+            for (var i = 0; i < palindromes.length; i++) {
+                res = palindromes[i].split("").reverse().join("");
+                if (res === palindromes[i]) {
+                    result.push(res);
+                }
+            }
+            console.log(result);
+        })
+            ();
+
+              //output:["TAT", "WOW", "MOM", "TINIT"]
+
+        //--------------------------------------------------------------------------------------------------------------------------------------
+
+    </script>
 </body>
+
 </html>
