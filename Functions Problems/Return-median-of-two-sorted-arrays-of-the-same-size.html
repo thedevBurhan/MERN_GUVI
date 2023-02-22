@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Return median of two sorted arrays of the same size</title>
 </head>
+
 <body>
-    
+    <script>
+        //By Functions:-
+
+        function returnMedianOfTwoSortedArraysOfTheSameSize(value1, value2) {
+            var res = value1.concat(value2);
+            var result = res.length / 2;
+            if (res.length % 2 == 0) {
+                return (res[result]);
+            }
+
+        }
+        var arr1 = [1, 2, 3, 4, 5];
+        var arr2 = [6, 7, 8, 9, 10];
+        console.log(returnMedianOfTwoSortedArraysOfTheSameSize(arr1, arr2));
+        //this method will work ,when the given two arrays of element are in ascending order.
+        //output: 6
+
+        //------------------------------------------------------------------------------------------------------------------------------------
+        //By Arrow Functions:-
+
+        var endresult = (value1, value2) => {
+            var res = value1.concat(value2);
+            var result = res.length / 2;
+            if (res.length % 2 == 0) {
+                return (res[result]);
+            }
+
+        }
+        var arr1 = [1, 2, 3, 4, 5];
+        var arr2 = [6, 7, 8, 9, 10];
+
+        console.log(endresult(arr1, arr2));
+
+        //output: 6
+
+        //--------------------------------------------------------------------------------------------------------------------------------------
+
+        //By Anonymous Functions :-
+
+        var endresult = function (value1, value2) {
+            var res = value1.concat(value2);
+            var result = res.length / 2;
+            if (res.length % 2 == 0) {
+                return (res[result]);
+            }
+
+        }
+        var arr1 = [1, 2, 3, 4, 5];
+        var arr2 = [6, 7, 8, 9, 10];
+
+        console.log(endresult(arr1, arr2));
+
+        //output: 6
+
+        //--------------------------------------------------------------------------------------------------------------------------------------
+
+        //IIFE - Immediately Invoked Function Expression
+
+        (function () {
+            var arr1 = [1, 2, 3, 4, 5];
+            var arr2 = [6, 7, 8, 9, 10];
+            var res = arr1.concat(arr2);
+            var result = res.length / 2;
+            if (res.length % 2 == 0) {
+                console.log(res[result]);
+            }
+
+
+
+        })
+            ();
+
+           //output: 6
+        //--------------------------------------------------------------------------------------------------------------------------------------
+
+    </script>
 </body>
+
 </html>
