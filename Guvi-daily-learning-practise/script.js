@@ -210,6 +210,43 @@ for(var i=0;i<arr1.length;i++){
 // console.log(ele);
 
 var arr=[1,1,2,3,4,5,6,7,4,3,2,5,6];
- console.log( new Set(arr));// to remove duplication
+ //console.log( new Set(arr));// to remove duplication
  //-------------------------------------------------------------------------------------------------------------------------------------
  
+ // write a function that takes array as an input
+//perform the summation of each and every element
+//of the array and return the sum of the elements 
+//of the array
+
+function sumOfAllNumbersInAnArray (arr){
+  var sum=0;
+  for(var i=0;i<arr.length;i++){
+      sum=sum+arr[i];
+  }
+  return sum;
+}
+var numbers=[12,13,14,25,36];
+
+//console.log(sumOfAllNumbersInAnArray(numbers));
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+// Write a javascript function to take the numbers as a paramater and print the sum of the numbers that you are 
+// passing as a parameter
+
+// function sumof(){
+// }
+
+// sumof(1);
+// sumof(1,2);
+// sumof(1,2,3,4);
+
+function sumOfAllNumbersInAnArrays (...arr){
+  var sum=0;
+  for(var i=0;i<arr.length;i++){
+      sum=sum+arr[i];
+  }
+  return sum;
+}
+
+//console.log(sumOfAllNumbersInAnArrays(25,36,4,8));
