@@ -1,5 +1,6 @@
 //To Find Prime Number
 var n = 10;
+var prime=[];
 for (var a = 2; a <= n; a++) {
   var count = 0;
   for (var i = 1; i <= a; i++) {
@@ -8,7 +9,7 @@ for (var a = 2; a <= n; a++) {
     }
   }
   if (count == 2) {
-    //console.log(a);
+   prime.push(a);
   }
 }
 
