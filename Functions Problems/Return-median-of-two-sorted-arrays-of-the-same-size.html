@@ -13,7 +13,10 @@
         //By Functions:-
 
         function returnMedianOfTwoSortedArraysOfTheSameSize(value1, value2) {
-            var res = value1.concat(value2);
+            var sort1=value1.sort((a,b)=>a-b); // this will compare the within the array by taking two value 
+                                               //and return the lesser value first (a-b) ,Incase (b-a) it will return in descending order
+            var sort2=value2.sort((a,b)=>a-b);
+            var res = sort1.concat(sort2);
             var result = res.length / 2;
             if (res.length % 2 == 0) {
                 return (res[result]);
@@ -21,16 +24,18 @@
 
         }
         var arr1 = [1, 2, 3, 4, 5];
-        var arr2 = [6, 7, 8, 9, 10];
+        var arr2 = [6, 7, 8, 10, 9];
         console.log(returnMedianOfTwoSortedArraysOfTheSameSize(arr1, arr2));
-        //this method will work ,when the given two arrays of element are in ascending order.
+        
         //output: 6
 
         //------------------------------------------------------------------------------------------------------------------------------------
         //By Arrow Functions:-
 
         var endresult = (value1, value2) => {
-            var res = value1.concat(value2);
+            var sort1=value1.sort((a,b)=>a-b);
+            var sort2=value2.sort((a,b)=>a-b);
+            var res = sort1.concat(sort2);
             var result = res.length / 2;
             if (res.length % 2 == 0) {
                 return (res[result]);
@@ -38,7 +43,7 @@
 
         }
         var arr1 = [1, 2, 3, 4, 5];
-        var arr2 = [6, 7, 8, 9, 10];
+        var arr2 =[6, 7, 8, 10, 9];
 
         console.log(endresult(arr1, arr2));
 
@@ -49,7 +54,9 @@
         //By Anonymous Functions :-
 
         var endresult = function (value1, value2) {
-            var res = value1.concat(value2);
+            var sort1=value1.sort((a,b)=>a-b);
+            var sort2=value2.sort((a,b)=>a-b);
+            var res = sort1.concat(sort2);
             var result = res.length / 2;
             if (res.length % 2 == 0) {
                 return (res[result]);
@@ -57,7 +64,7 @@
 
         }
         var arr1 = [1, 2, 3, 4, 5];
-        var arr2 = [6, 7, 8, 9, 10];
+        var arr2 = [6, 7, 8, 10, 9];
 
         console.log(endresult(arr1, arr2));
 
@@ -69,8 +76,10 @@
 
         (function () {
             var arr1 = [1, 2, 3, 4, 5];
-            var arr2 = [6, 7, 8, 9, 10];
-            var res = arr1.concat(arr2);
+            var arr2 = [6, 7, 8, 10, 9];
+            var sort1=arr1.sort((a,b)=>a-b);
+            var sort2=arr2.sort((a,b)=>a-b);
+            var res = sort1.concat(sort2);
             var result = res.length / 2;
             if (res.length % 2 == 0) {
                 console.log(res[result]);
