@@ -269,6 +269,20 @@ class Student {
   }
 }
 var stu = new Student("Peter", 88);
-console.log(stu.printmarks());
+//console.log(stu.printmarks());
 
 // ------------------------------------------------------------------------------------------------------------------------------------
+
+var request = new XMLHttpRequest();
+request.open("Get", "https://restcountries.com/v2/all");
+request.send();
+request.onload = function () {
+  var res= JSON.parse(request.response);
+  console.log(res);
+  var data=res;
+   var result=data.filter((ele)=>ele.population<100000);
+   var finalResult=result.map((ele)=>ele.name);
+   console.log(finalResult);
+   
+  
+};
