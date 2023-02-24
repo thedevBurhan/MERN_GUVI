@@ -22,7 +22,7 @@ for (var a = 2; a <= n; a++) {
 //variables names:userdefined (our choice)
 var request = new XMLHttpRequest();
 // new :- this will create a new empty object
-//step 2: Specify teh API url
+//step 2: Specify the API url
 request.open("Get", "https://restcountries.com/v2/all");
 
 //step 3: Sending the request
