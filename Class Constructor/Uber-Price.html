@@ -33,26 +33,28 @@
      var location3=new Uber("Adyar","Paarys",18,9,10,40);
      var location4=new Uber("Royapettah","Marina Beach",4,9,10,10);
 
-     if(this.totalTimeToReach<=10 && this.totalTimeToReach<=15){
-        console.log(location1.rushHours());
-     }else{
+     if(location1.totalTimeToReach>=9 && location1.totalTimeToReach<=16){
         console.log(location1.normalHours());
+     }else{
+        console.log(location1.rushHours());
      }
-     if(this.totalTimeToReach>10 && this.totalTimeToReach>15){
+     if(location2.totalTimeToReach>=9 && location2.totalTimeToReach<=16){
         console.log(location2.normalHours());
      }else{
         console.log(location2.rushHours());
      }
-     if(this.totalTimeToReach<=10 && this.totalTimeToReach<=15){
+     if(location3.totalTimeToReach >=9 && location3.totalTimeToReach <= 16){
         console.log(location3.normalHours());
      }else{
         console.log(location3.rushHours());
      }
-     if(this.totalTimeToReach<=10 && this.totalTimeToReach<=15){
-        console.log(location4.rushHours());
-     }else{
+     if(location4.totalTimeToReach >= 9 && location4.totalTimeToReach <= 16){
         console.log(location4.normalHours());
+     }else{
+        console.log(location4.rushHours());
      }
+
+    
    </script>
     
 </body>
