@@ -278,11 +278,33 @@ request.open("Get", "https://restcountries.com/v2/all");
 request.send();
 request.onload = function () {
   var res= JSON.parse(request.response);
-  console.log(res);
+ // console.log(res);
   var data=res;
    var result=data.filter((ele)=>ele.population<100000);
    var finalResult=result.map((ele)=>ele.name);
-   console.log(finalResult);
+   //console.log(finalResult);
    
   
 };
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+
+//Input:string
+//output:sTrInG
+
+var str="mohammed";
+var split=str.split("");
+var res=[];
+for(var i=0;i<split.length;i++){
+  
+  if(i % 2 ==0){
+    res.push(split[i]);
+  }else{
+    
+    res.push(split[i].toUpperCase())
+  }
+}
+//console.log(res.join(""));
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+
