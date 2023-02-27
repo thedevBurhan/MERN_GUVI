@@ -315,7 +315,7 @@ request.onload=function(){
     var results=JSON.parse(request.response);
     var region = results.filter((element) => element.region == "Asia");
     var totalPopulation=region.reduce((value1,value2)=>value1+value2.population,0);
-    console.log(totalPopulation)
+  //  console.log(totalPopulation)
 
 }
 // ------------------------------------------------------------------------------------------------------------------------------------
