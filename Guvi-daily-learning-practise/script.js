@@ -308,4 +308,16 @@ for(var i=0;i<split.length;i++){
 
 // ------------------------------------------------------------------------------------------------------------------------------------
 
+var request=new XMLHttpRequest();
+request.open("Get","https://restcountries.com/v2/all");
+request.send();
+request.onload=function(){
+    var results=JSON.parse(request.response);
+    var region = results.filter((element) => element.region == "Asia");
+    var totalPopulation=region.reduce((value1,value2)=>value1+value2.population,0);
+    console.log(totalPopulation)
+
+}
+// ------------------------------------------------------------------------------------------------------------------------------------
+
 
