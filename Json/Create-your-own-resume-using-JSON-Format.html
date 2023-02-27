@@ -1,62 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create your own resume in JSON format</title>
 </head>
+
 <body>
     <h1 style="text-align: center;">Create your own resume in JSON format</h1>
     <script>
-         var resume = [{
-            'name':'Mohammed Burhan S',
-            'qualifications':'B.E Mechanical enginneering',
+        var resume = [{
+            'name': 'Mohammed Burhan S',
+            'qualifications': 'B.E Mechanical enginneering',
             'mail': 'smdburhan@gmail.com',
             'address': '16/6 ,Killer gooddown, Chennai',
             'mobile': '9876543210',
             '10th': 'Velakanni matric higher sec school',
             'percentageAt10th': '89%',
             '12th': 'Velakanni matric higher sec school',
-            'percentageAt12th' : '82%',
-            'college' : 'S.A Enginering College',
+            'percentageAt12th': '82%',
+            'college': 'S.A Enginering College',
             'percentageAtCollege': '79%',
-}];
+        }];
 
-// using for loop
+        // using for loop
 
-for (var i=0;i<resume.length;i++){
-    console.log(resume[i]['name'])
-    console.log(resume[i]['qualifications']);
-    console.log(resume[i]['mail']);
-    console.log(resume[i]['address']);
-    console.log(resume[i]['mobile']);
-    console.log(resume[i]['10th']);
-    console.log(resume[i]['percentageAt10th']);
-    console.log(resume[i]['12th']);
-    console.log(resume[i]['percentageAt12th']);
-    console.log(resume[i]['college']);
-    console.log(resume[i]['percentageAtCollege']);
-} 
-// ---------------------------------------------------------------------------------------------------------------------------------------
+        for (var i = 0; i < resume.length; i++) {
+            console.log(resume[i]['name'])
+            console.log(resume[i]['qualifications']);
+            console.log(resume[i]['mail']);
+            console.log(resume[i]['address']);
+            console.log(resume[i]['mobile']);
+            console.log(resume[i]['10th']);
+            console.log(resume[i]['percentageAt10th']);
+            console.log(resume[i]['12th']);
+            console.log(resume[i]['percentageAt12th']);
+            console.log(resume[i]['college']);
+            console.log(resume[i]['percentageAtCollege']);
+        }
+        // ---------------------------------------------------------------------------------------------------------------------------------------
 
-// using for in loop
+        // using for in loop
 
-for (var i in resume){
-    console.log(resume[i]['name']);
-    console.log(resume[i]['qualifications']);
-    console.log(resume[i]['mail']);
-    console.log(resume[i]['address']);
-    console.log(resume[i]['mobile']);
-    console.log(resume[i]['10th']);
-    console.log(resume[i]['percentageAt10th']);
-    console.log(resume[i]['12th']);
-    console.log(resume[i]['percentageAt12th']);
-    console.log(resume[i]['college']);
-    console.log(resume[i]['percentageAtCollege']);
-}
+        for (var i in resume) {
+            console.log(resume[i]['name']);
+            console.log(resume[i]['qualifications']);
+            console.log(resume[i]['mail']);
+            console.log(resume[i]['address']);
+            console.log(resume[i]['mobile']);
+            console.log(resume[i]['10th']);
+            console.log(resume[i]['percentageAt10th']);
+            console.log(resume[i]['12th']);
+            console.log(resume[i]['percentageAt12th']);
+            console.log(resume[i]['college']);
+            console.log(resume[i]['percentageAtCollege']);
+        }
 
-// ---------------------------------------------------------------------------------------------------------------------------------------
+        // ---------------------------------------------------------------------------------------------------------------------------------------
+
+        //Foreach and for of taught on 27/02/2023
+
+        //Using for of method
+
+        for (var i of resume) {
+            console.log(i['name']);
+            console.log(i['qualifications']);
+            console.log(i['mail']);
+            console.log(i['address']);
+            console.log(i['mobile']);
+            console.log(i['10th']);
+            console.log(i['percentageAt10th']);
+            console.log(i['12th']);
+            console.log(i['percentageAt12th']);
+            console.log(i['college']);
+            console.log(i['percentageAtCollege']);
+        }
+
+        // ---------------------------------------------------------------------------------------------------------------------------------------
+         
+
+        //Using forEach method
+
+        resume.forEach((element)=>{
+            console.log(element.name);
+            console.log(element.qualifications);
+            console.log(element.mail);
+            console.log(element.address);
+            console.log(element.mobile);
+            console.log(element['10th']);
+            console.log(element.percentageAt10th);
+            console.log(element['12th']);
+            console.log(element.percentageAt12th);
+            console.log(element.college);
+            console.log(element['percentageAtCollege']);
+        })
+
+          // ---------------------------------------------------------------------------------------------------------------------------------------
     </script>
 </body>
+
 </html>
