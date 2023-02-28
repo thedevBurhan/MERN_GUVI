@@ -335,3 +335,8 @@ for(var i=0;i<x;i++){
 console.log(min_index);
 
 // ------------------------------------------------------------------------------------------------------------------------------------
+
+//given 4 numbers n p q r followed by n integers find the maximum value of pa [i] +qa[ j] +ra [k]
+//4
+// 5 1 3 2
+// 3 2 5 5 
