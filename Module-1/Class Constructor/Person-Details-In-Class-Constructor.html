@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person details in Class Constructor</title>
+</head>
+<body>
+    <script>
+       // Task:3 Write a “person” class to hold all the details.
+       
+        class Person{
+           constructor(firstname,lastname,age,gender,eyecolor,height){
+            this.firstname=firstname;
+            this.lastname=lastname;
+            this.age=age;
+            this.gender=gender;
+            this.eyecolor=eyecolor;
+            this.height=height;
+           } 
+          fullname(){
+            return this.firstname+" "+this.lastname;
+          }
+        }
+        var Person1=new Person("Elon","Musk",56,"male","black",5.6);
+        var Person2=new Person("Leo","Messi",36,"male","brown",5.1);
+        var Person3=new Person("Andrew","Tate",34,"male","lite Brown",6);
+        var Person4=new Person("Selena","Gomez",31,"Female","Black",5.4);
+        console.log(Person1.fullname()+" "+"age"+" "+Person1.age+" "+Person1.gender);
+        console.log(Person2.fullname()+","+"age"+" "+Person1.age+" "+Person1.gender+","+"height"+" "+Person2.height);
+        console.log(Person3.fullname()+" "+"age"+" "+Person1.age+" "+Person1.gender);
+        console.log(Person4.fullname()+","+"age"+" "+Person1.age+" "+Person1.gender+","+"height"+" "+Person2.height);
+    </script>
+</body>
+</html>

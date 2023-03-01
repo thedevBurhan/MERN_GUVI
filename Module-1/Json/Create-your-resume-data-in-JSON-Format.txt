@@ -1,0 +1,40 @@
+      
+2. Create Your Own resume data in JSON Format 
+
+      var resume = {
+            'name':'Mohammed Burhan S',
+            'qualifications':'B.E Mechanical enginneering',
+            'mail': 'smdburhan@gmail.com',
+            'address': '16/6 ,Killer gooddown, Chennai',
+            'mobile': '9876543210',
+            '10th': 'Velakanni matric higher sec school',
+            'percentageAt10th': '89%',
+            '12th': 'Velakanni matric higher sec school',
+            'percentageAt12th' : '82%',
+            'college' : 'S.A Enginering College',
+            'percentageAtCollege': '79%',
+};
+
+
+//------------------------------------------------------------------------------------------------------------------------------------
+
+3. Read about the different between window, screen and document in JavaScript
+
+ Window:-
+
+        Window is the main JavaScript object root, it is also the global object in a browser,also can be treated as the root of the
+ document object model. You can access it as window.The window is the first thing that gets loaded into the browser. This window object 
+ has the majority of the properties like length,innerWidth, innerHeight, name.
+
+Screen:-
+
+      The Window object also has a screen object with properties describing the physical display:
+      
+         *screen properties width and height are the full screen (window.screen)
+
+Document:-
+
+     The Document object(DOM) is your html, CSS,JS or other document that will be loaded into the browser.
+The document actually gets loaded inside the window object and has properties available to it like title, URL, cookie, etc.
+you want to access a property for the window it is window.property,if it is document it is window.document.property which 
+is also available in short as document.property.
