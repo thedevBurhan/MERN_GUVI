@@ -8,7 +8,7 @@ Now On what basis they have to be placed ??.......
 5.sticky
 
 1.static:They are not affected by top ,left, bottom or right
-By default all the html elements are positioned static 
+By default all the html elements are positioned static. 
 
 
 2.relative:
