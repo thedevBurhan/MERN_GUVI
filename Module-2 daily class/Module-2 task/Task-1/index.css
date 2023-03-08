@@ -1,0 +1,99 @@
+
+.page-1{
+    background-color: rgb(48, 46, 46);
+    height:720px ;
+}
+.nav-item{
+    font-size: 20px;
+    color: rgb(174, 159, 145);
+}
+.box-part{
+    /* background-color: white; */
+    /* border: 2px solid blue; */
+    padding: 2px 2px;
+    margin: 13rem 1rem;
+    color:white ;
+}
+.Name{
+    font-size: 80px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif 
+}
+.subhead{
+    padding-top:10px;
+    font-size: 30px;
+}
+.page-2{
+    background-color:white;
+    height:760px ;  
+}
+.page-2-box-part{
+     background-color: white; 
+     /* border: 2px solid blue; */
+     margin: 20px 3px;
+}
+.start-content{
+    /* margin-left:12rem; */
+    
+}
+.page-2-button{
+    background-color: white; 
+     /* border: 2px solid blue; */
+}
+.small-content{
+    background-color:black;
+    height:10rem ; 
+    font-size: 15px;
+    color: whitesmoke;
+}
+.page-3{
+    background-color:white;
+    height:760px ;  
+}
+.hori{
+    
+        display: flex;
+        flex-direction: row;
+        font-size: 3rem;
+}
+
+.hori:before,
+.hori:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #9891914e;
+    margin: auto;
+}
+
+.box-parts{
+    background-color: white;
+    padding: 10px 8px;
+    margin: 8px 3px;
+    border:1px solid rgba(128, 128, 128, 0.434);
+    border-radius: 3px;
+    box-shadow:  2px 2px #88888831;
+}
+.box{
+    padding: 60px 0px;
+   /* border: 2px solid rgba(0, 0, 0, 0.214); */
+   margin-top: 1rem;
+}
+
+   span{
+       font-size: 14px;
+       color: rgba(128, 128, 128, 0.522);
+       
+   }
+   
+   h6{
+    color:lightslategray
+   }
+   .end{
+    /* margin-top: 5rem; */
+    background-color:black;
+    height:250px; 
+   }
+   .box-par{
+    border-left:1px solid rgba(128, 128, 128, 0.681);
+    padding: 10px 8px
+
+   }
