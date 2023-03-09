@@ -20,5 +20,7 @@ a{
 }
 .box{
     padding: 60px 0px;
-
+    display: flex;
+    flex-direction:left;
+    justify-content: center;
 }
