@@ -340,3 +340,56 @@ console.log(min_index);
 //5 1 2 3
 // 1 2 3 4 5
 // 30
+
+var data="mississipie".split("");
+var emptyObject={};
+var key;
+for(var i=0;i<data.length;i++){
+  key=data[i];
+  if (!emptyObject[key]) {
+      emptyObject[key] = 1;
+    } else if (emptyObject[key]) {
+      emptyObject[key] += 1;
+    }
+}
+
+console.log(emptyObject);
+let max = 0;
+let maxKey = "";
+var x=[];
+for(let empty in emptyObject){
+  if(emptyObject[empty]> max){
+    max = emptyObject[empty];
+    maxKey= empty;
+    x.push(maxKey);
+  }
+}
+
+console.log(x.join(""));
+
+// -----------------------------------------------------------------------------------------------------------------------------------
+// You are given a paragraph.Your task is to print the words that come just after articles.
+
+// Input Description:
+// You are given a string ‘s’
+
+// Output Description:
+// print the words that come just after articles and -1 if there are no articles
+
+// Sample Input :
+// The sun rises in the east
+
+// Sample Output :
+// sun east
+
+var res="The sun rises in the east".split(" ");
+var temp=[];
+for(var i=0;i<res.length;i++){
+    var c=res[i];
+    if(c.charAt(res[i].length-1) === "a" || c.charAt(res[i].length-1) === "e" || c.charAt(res[i].length-1) === "i"||c.charAt(res[i].length-1) === "o" || c.charAt(res[i].length-1) === "u")
+    temp.push(res[i+1]);
+}
+console.log(temp.join(" "));
+
+// ----------------------------------------------------------------------------------------------------------------------------------
+
