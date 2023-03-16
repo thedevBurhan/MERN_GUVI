@@ -1,4 +1,4 @@
-let submit = document.getElementById("submit");
+var submit = document.getElementById("submit");
 submit.addEventListener("click", function (e) {
   e.preventDefault();
   // first name check----------------------------------------------------
@@ -13,14 +13,14 @@ submit.addEventListener("click", function (e) {
   //  -------------------------------------------------------------------
 
   // address--------------------------------------------------------------
-  let address = [];
+  var address = [];
   address.push(Address1.value);
   address.push(Address2.value);
   //  -------------------------------------------------------------------
 
-  let gender = document.getElementsByName("radio");
-  let genderValue = [];
-  for (let i = 0; i < gender.length; i++) {
+  var gender = document.getElementsByName("radio");
+  var genderValue = [];
+  for (var i = 0; i < gender.length; i++) {
     if (gender[i].checked) {
       genderValue.push(gender[i].value);
     }
@@ -29,11 +29,11 @@ submit.addEventListener("click", function (e) {
 
   // food ------------------------------------------------------------------
 
-  let food = document.getElementsByName("food");
-  let foodList = [];
-  let foodCount = 0;
+  var food = document.getElementsByName("food");
+  var foodList = [];
+  var foodCount = 0;
   console.log(food);
-  for (let i = 0; i < food.length; i++) {
+  for (var i = 0; i < food.length; i++) {
     if (food[i].checked) {
       foodList.push(food[i].value);
       foodCount++;
@@ -82,15 +82,15 @@ function showSuccess(input) {
   formControl.className = "firstname success";
 }
 // ---------------------------------------------------------------------------
-let fname = document.getElementById("fname");
-let lname = document.getElementById("lname");
-let Address1 = document.getElementById("Address1");
-let Address2 = document.getElementById("Address2");
-let pincode = document.getElementById("pincode");
-let gender = document.getElementById("gender");
-let food = document.getElementById("food");
-let state = document.getElementById("state");
-let country = document.getElementById("country");
+var fname = document.getElementById("fname");
+var lname = document.getElementById("lname");
+var Address1 = document.getElementById("Address1");
+var Address2 = document.getElementById("Address2");
+var pincode = document.getElementById("pincode");
+var gender = document.getElementById("gender");
+var food = document.getElementById("food");
+var state = document.getElementById("state");
+var country = document.getElementById("country");
 
 function createTable(
   fname,
@@ -102,16 +102,16 @@ function createTable(
   state,
   country
 ) {
-  let tbody = document.getElementById("tbody");
-  let tr = document.createElement("tr");
-  let td1 = document.createElement("td");
-  let td2 = document.createElement("td");
-  let td3 = document.createElement("td");
-  let td4 = document.createElement("td");
-  let td5 = document.createElement("td");
-  let td6 = document.createElement("td");
-  let td7 = document.createElement("td");
-  let td8 = document.createElement("td");
+  var tbody = document.getElementById("tbody");
+  var tr = document.createElement("tr");
+  var td1 = document.createElement("td");
+  var td2 = document.createElement("td");
+  var td3 = document.createElement("td");
+  var td4 = document.createElement("td");
+  var td5 = document.createElement("td");
+  var td6 = document.createElement("td");
+  var td7 = document.createElement("td");
+  var td8 = document.createElement("td");
   td1.innerHTML = fname;
   td2.innerHTML = lname;
   td3.innerHTML = address;
