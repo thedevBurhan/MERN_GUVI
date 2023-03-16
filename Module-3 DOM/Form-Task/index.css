@@ -11,6 +11,12 @@ body {
 .wrap {
   margin: 2%;
 }
+.form{
+  padding-right: 25px;
+  border-right:5px solid;
+border-right-color:rgba(211, 211, 211, 0.616);
+
+}
 .firstname input:focus {
   outline: 0;
   border-color: #161717;
@@ -37,3 +43,4 @@ body {
 span {
   color: rgba(0, 0, 0, 0.586);
 }
+
