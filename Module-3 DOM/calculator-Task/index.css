@@ -1,0 +1,25 @@
+body{
+    background-color: white;
+}
+.wrap{
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.03),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.04),
+    0 12.5px 10px rgba(0, 0, 0, 0.0),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.07),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.08),
+    0 100px 80px rgba(0, 0, 0, 0.1)
+  ;
+    height: 25rem;
+    width: 20rem;
+    margin: 100px auto;
+    background:wheat;
+    border-radius: 5px;
+}
+.row1{
+    border: 2px solid black;
+    width: 20rem;
+    margin: 100px auto;
+    background:rgb(0, 0, 0);
+    border-radius: 5px;
+}
