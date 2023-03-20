@@ -1,14 +1,24 @@
-var wrap=document.createElement("div");
-wrap.setAttribute("class","wrap");
-// wrap.setAttribute("class","container");
-document.body.append(wrap);
+function creatediv(tagname){
+    var div=document.createElement(tagname);
+    return div;
+}
 
 
-const thtable4444but = document.createElement('button');
-                        thtable4444but.setAttribute('id','test1');
-                        thtable4444but.innerHTML = '/';
-                        thtable4444but.value = '/';
-                        thtable4444but.setAttribute('onclick', "btn1('/')")
-
-const thtable4444 = document.createElement('th');                
-                  thtable4444.appendChild(thtable4444but);
+function inputs(tagname,attrname,attrvalue,attrname1,attrvalue1,attrname2,attrvalue2){
+    var element=document.createElement(tagname);
+    element.setAttribute(attrname,attrvalue);
+    element.setAttribute(attrname1,attrvalue1);
+    element.setAttribute(attrname2,attrvalue2);
+    return element;
+}
+function inputsWithColor(tagname,attrname,attrvalue,attrname1,attrvalue1,attrname2,attrvalue2,attrname3,attrvalue3,attrname4,attrvalue4){
+    var elements=document.createElement(tagname);
+    elements.setAttribute(attrname,attrvalue);
+    elements.setAttribute(attrname1,attrvalue1);
+    elements.setAttribute(attrname2,attrvalue2);
+    elements.setAttribute(attrname3,attrvalue3);
+    elements.setAttribute(attrname4,attrvalue4);
+    return elements;
+}
+var divforfirstrow=creatediv("div");
+var allclear=inputsWithColor("input","type","button","value","AC","onclick",)

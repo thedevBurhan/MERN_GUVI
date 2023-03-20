@@ -1,25 +1,57 @@
-body{
-    background-color: white;
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+  
+    height: 100vh;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .wrap{
-    box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.03),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.04),
-    0 12.5px 10px rgba(0, 0, 0, 0.0),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.07),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.08),
-    0 100px 80px rgba(0, 0, 0, 0.1)
-  ;
-    height: 25rem;
-    width: 20rem;
-    margin: 100px auto;
-    background:wheat;
-    border-radius: 5px;
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
 }
-.row1{
-    border: 2px solid black;
-    width: 20rem;
-    margin: 100px auto;
-    background:rgb(0, 0, 0);
-    border-radius: 5px;
+.wrap form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow:-3px -3px 12px rgba(255,255,255,0.1),8px 8px 5px rgba(255, 255, 255, 0);
+    background: transparent;
+    font-size: 20px;
+    color:#fff;
+    cursor: pointer;
+    margin: 10px;
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    background-color: #ffffff00;
+    padding: 3px;
+      box-shadow:
+        -1px -1px 1px 0 rgba(0, 0, 0, 0.25) inset,
+        2px 2px 2px 0 rgba(255, 255, 255, 0.3) inset;
+}
+form  input.equal{
+    width: 145px;
+    color: rgb(125, 0, 243);
+}
+form input.color{
+    color: #33ffd8;
 }
