@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var age=parseInt(prompt("Enter the age"));
+var p1=new Promise((resolve,reject)=>{
+    if(age>=18){
+        resolve("you are eligible to vote!!!!");
+    }
+    else{
+        reject("You are not eligible to vote!!!");
+    }
+
+});
+console.log(p1);
+
+var age=parseInt(prompt("Enter the age"));
+var p1=new Promise((resolve,reject)=>{
+    if(age>=18){
+        resolve("you are eligible to vote!!!!");
+    }
+    else{
+        reject("You are not eligible to vote!!!");
+    }
+
+});
+
+var p2=new Promise((resolve,reject)=>{
+    resolve("this is p2 resolved");
+    reject("this is  rejected")
+});
+        function getdata(num){
+            return new Promise((resolve,reject)=>setTimeout(()=>resolve(5*num)))
+        }
+
+        getdata(5).then((data)=>{
+            console.log(data);
+            return getdata(data);
+        })
+        .then((data1)=>{
+            console.log(data1);
+            return getdata(data1);
+        })
+        .then((data2)=>console.log(data2))
+        .catch((error)=>console.log(error));
+    </script>
+</body>
+</html>
