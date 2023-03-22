@@ -131,5 +131,5 @@ function createTable(
   tbody.append(tr);
 }
 function myFunction() {
-  document.getElementById("myForm").reset();
+  document.getElementById("form").reset();
 }

@@ -19,6 +19,7 @@
             padding: 0;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
             box-sizing: border-box;
+            text-align: center;
         }
 
         .container{
@@ -47,6 +48,7 @@
             color:#fff;
             cursor: pointer;
             margin: 10px;
+            text-align:center;
         }
         form .display{
             display: flex;
@@ -81,7 +83,7 @@
             <form>
 
                 <div class="display">
-                    <input type="text" name="display">
+                    <input type="text" name="display" id="display">
                 </div>
 
                 <div>
@@ -91,9 +93,9 @@
                     <input type="button"  value="/" onclick="display.value += '/'" class="color">
                 </div>
                 <div>
-                    <input type="button"  value="7" onclick="display.value += '7'">
-                    <input type="button"  value="8" onclick="display.value += '8'">
-                    <input type="button"  value="9" onclick="display.value += '9'">
+                    <input type="button"  value="7" onclick="display.value += '7'" class="text">
+                    <input type="button"  value="8" onclick="display.value += '8'" class="text">
+                    <input type="button"  value="9" onclick="display.value += '9'" class="text">
                     <input type="button"  value="*" onclick="display.value += '*'" class="color">
                 </div>
                 <div>
