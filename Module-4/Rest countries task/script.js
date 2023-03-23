@@ -34,7 +34,7 @@ function foo(data1) {
                 
                   <p class="card-text mb-3">Country Code: ${data1[i].alpha3Code}</p>
                   
-                   <button type="button" class="btn btn-secondary">Click for Weather</button>
+                   <button type="button" class="btn btn-secondary"><a href="https://openweathermap.org/>Click for Weather</button>
                </div>
            </div>
         
