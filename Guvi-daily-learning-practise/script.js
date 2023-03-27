@@ -7,7 +7,7 @@ for (var a = 2; a <= n; a++) {
     if (a % i === 0) {
       count++;
     }
-  }
+  }x
   if (count == 2) {
    prime.push(a);
   }
