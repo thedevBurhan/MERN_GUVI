@@ -11,7 +11,7 @@ row.append(span);
 var res = fetch("https://restcountries.com/v2/all"); //this is return Promise in readable stream(A packets od data);
 res
   .then((data) => data.json()) //this will return promise in object
-  .then((data1) => console.log(data1) ) //this will return array of object
+  .then((data1) => foo(data1) ) //this will return array of object
   .catch((error) => console.log(error));
 
 function foo(data1) {
