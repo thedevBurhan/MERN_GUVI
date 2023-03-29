@@ -393,3 +393,64 @@ console.log(temp.join(" "));
 
 // ----------------------------------------------------------------------------------------------------------------------------------
 
+var x=[1,2,3,4,5,2];
+var v=2;
+var z=false;
+for(var x of x){
+  console.log(x*2);
+}
+console.log(v);
+console.log(typeof(v));
+console.log(x);
+
+// typeof(null) ====object
+// typeof(undefined)===undefined
+// typeof(map)===object
+// typeof(filter)==object
+// typeof(reduce)==what we pass in parmeter is with return the same
+// typeof(string)==string
+// typeof(number)==number
+// typeof(boolean)==boolean
+
+// map --- it takes functions as a parameters, the iterate each and every element in an array, Return will be a NEW ARRAY 
+//  typeof will be an Object .
+// filter---it takes functions as a parameters , it will check the required element based on 
+// a condition given and RETURN the element in AN NEW ARRAY  , If their is no element found it return UNDIFINED
+// reduce--- it takes functions as a parameters, it has two parameters current value , index, initial valve , it will iterate 
+// every element in an array and return a single value , typeof will the  defined by given value in a varaiable
+//find-- it takes functions as a parameters , it will check or find the reurement based on the condition given 
+// and return the element in a single value and it will given only the first element as find in an array , typeof is based on the
+//value given 
+//  for loop--- it has  ( intialzaion, condition,action(increment /deceremnet))
+// it will uses in array, object, string ,number,..
+// forEach-- Return undefined  it iterate every element to get the data we need to console in itself;
+// for-in loop---- it is applicable for both arrary and object ,it only increment the iteration
+// for-of loop---it is applicable only in array 
+
+// data types
+// primitive data types
+
+// string
+// number
+// boolean
+// undifined
+// null
+
+// non-primitive data types 
+// array 
+// object
+
+// copy by value 
+// string,number  
+//  it has two or more different variable name but the values are same 
+// var x=5;
+// var b=x; (now b contain the value of x)
+// var b=2; ( now b contain the value of 2 bez it is reassign )
+
+// copy by refrenece 
+// array and object 
+//  it has two or more variablename  but the varaiable name direct/refrenece to the same values 
+// var c={
+  // a:4,
+  // b:8,
+}
