@@ -38,7 +38,7 @@ function foo(data1) {
                 
                   <p class="card-text mb-3">Country Code: ${data1[i].alpha3Code}</p>
                   
-                   <button type="button" class="btn btn-secondary" onclick=getdata();>Click for Weather</button>
+                   <button type="button" class="btn btn-secondary" onclick=weatherdata(${data1[i].latlng},${data1[i].latlng});>Click for Weather</button>
                </div>
            </div>
         
@@ -46,33 +46,14 @@ function foo(data1) {
   }
   document.body.append(container);
 }
-
-//Multiple api with async and await
-async function getdata(){
-  var res=await fetch("https://restcountries.com/v2/all");
-  var res1= await res.json();
-
-  for(var i=0;i<res1.length;i++){
-      try {
-          // console.log(`Latitude:${res1[i].latlng[0]} Longitude:${res1[i].latlng[1]}`);
-          weatherdata(res1[i].latlng[0],res1[i].latlng[1]);
-      } 
- catch (error) {
-  console.log(error);
-}
-}
-}
-
-async function weatherdata(lat,lon){
-try {
-  if(lon===undefined) throw new Error("Invalid Coordinates");
-  // console.log(lat,lon);
-  let res2=await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=fa4973b1fa1ca717811b9566c55321ec`);
-  let res3=await res2.json();
-  console.log(`${res3.main.temp}`);
-} catch (error) {
- console.log(error) 
-}
-
+function weatherdata(lat,lon)
+{
+  let ress=fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=e7c3fc1be1e0089a7262e983c6f7198b`)  
+  ress.then((data)=>data.json()).then((data2)=>
+  {alert(`
+  Latitude: ${lat} 
+  Longitude: ${lon} 
+  Temp: ${data2.main.temp}`);  
+});
 }
 // getdata();
